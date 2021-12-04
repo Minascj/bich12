@@ -1,0 +1,296 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+#header{
+    width:100%;
+    height:72px;
+    background-color: #fff;
+    display: inline-flex;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index:5;
+    box-shadow:0 2px 20px rgb(204, 203, 203);
+}
+#header h2{
+    color:rgb(0, 221,221);
+    font-size:38px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin:25px 0 10px 32px;
+    display: inline-block;
+}
+#header img{
+    height:38px;
+    margin-top:27px;
+}
+#header div{
+    margin-left:300px;
+}
+#header div h2{
+    font-family: sans-serif;
+    color:black;
+    font-size:22px;
+    padding:6px 11px;
+    transition-duration:0.5s;
+    cursor: pointer;
+}
+#header div h2:hover{
+    color:#fff;
+    background-color: rgb(139, 79, 92);
+    border-radius:25px;
+    transform: scale(1.1);
+}
+#introduce{
+    background-color: rgb(136, 203, 230);
+    height:550px;
+    margin-top:75px;
+}
+#introduce img{
+    height:548px;
+    border-radius:30px 0 0 30px;
+    position:absolute;
+    top:76px;
+    right:0;
+    box-shadow:-10px 0px 15px rgb(80, 174, 197);
+}
+#introduce h1{
+    font-size:62px;
+    font-family: cursive;
+    padding:145px 0 0 202px;
+    text-shadow:-8px 5px 12px rgb(99, 94, 94);
+}
+#introduce p{
+    width:758px;
+    font-size:18px;
+    font-family:'Courier New', Courier, monospace;
+    padding:25px 0 15px 160px;
+}
+#introduce h3{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width:162px;
+    height:42px;
+    border-radius:26px;
+    background-color: rgb(52, 168, 52);
+    margin-left:194px;
+    padding-top:7px;
+}
+#introduce h3 a{
+    text-decoration: none;
+    color:#fff;
+    padding-left:15px;
+}
+#introduce h3:hover{
+    background-color:rgb(197, 217, 197);  
+}
+#introduce h3 a:hover{
+    color:rgb(20, 110, 20);
+}
+#factor{
+    padding-top:120px;
+}
+#factor #animal{
+    position: absolute;
+    top:720px;
+    right:100px;
+    width:650px;
+    height:500px;
+    display: inline-flex;
+}
+#animal i {
+    font-size:35px;
+    margin:15px;
+    padding:15px;
+    position: relative;
+    animation-iteration-count: infinite;
+    border-radius:25px;
+    animation-duration:10s;
+}
+#animal .wifi i{   
+    animation-name:wifi;
+    background-color:rgba(0, 0, 255,0.4)
+}
+#animal .laptop i{
+    animation-name:laptop;
+    background-color:rgba(255, 0, 0,0.4);
+}
+#animal .robot i{
+    animation-name:robot;
+    background-color:rgba(0, 255, 0, 0.4);
+}
+@keyframes wifi{
+    0%  { left:0px; top:0px;}
+    50% { left:300px; top:200px;}
+    100%{ left:0px; top:0px;}
+}
+@keyframes laptop{
+    0%  { left:0px; top:0px;}
+    50% { left:0px; top:200px;}
+    100%{ left:0px; top:0px;}
+}
+@keyframes robot{
+    0%  { left:0px; top:0px;}
+    50% { left:-300px; top:200px;}
+    100%{ left:0; top:0;}
+} 
+.ItdFactor h2{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:48px;
+    margin-left:230px;
+}
+.ItdFactor .ListFactor li{
+    font-size:19px;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    margin:12px 0 0 325px;
+}
+.ListFactor i{
+    color:rgb(255, 0, 0);
+    padding-right:12px;
+}
+#fiveFactor {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin:0px 52px 0 210px;
+    width:1200px;
+}
+#fiveFactor div{
+    width:340px;
+    font-size:16px;
+    color:#000;
+    background-color:rgba(151, 235, 207, 0.5);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius:42px 42px 5px 42px;
+    padding:55px 35px;
+    transition-duration:0.5s;
+}
+#fiveFactor div:hover{
+    background-image: linear-gradient(to left, pink, rgb(151, 235, 207));
+    bottom:15px;
+    right:10px;
+    position: relative;
+    box-shadow:13px 15px rgba(230,138,200,0.25);
+}
+#fiveFactor .Degree, .Time, .Finding{
+    margin:94px 28px 0;
+}
+#fiveFactor .Practice, .English{
+    margin:45px 28px;
+}
+#fiveFactor .Practice{
+    margin-left:198px;
+}
+#fiveFactor i{
+    display: block;
+    font-size:44px;
+    margin-left:23px;
+}
+#video{
+    position:relative;
+    margin-top:45px;
+}
+#video div{
+    width:810px;
+    height:510px;
+    overflow: auto;
+    margin:90px 0 0 310px;
+    padding:10px 10px 10px 20px;
+    background-color: black;
+    color:#fff;
+    box-shadow:0 0 50px #000;
+    position: absolute;
+    z-index:3;
+}
+#video div iframe{
+    width:760px;
+    height:415px;
+}
+#video h4{
+    margin-bottom:32px;
+}
+#video img{
+    width:100%;
+    height:720px;
+    top:0;
+    right:0;
+    left:0;
+}
+#contact{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height:450px;
+    text-align: center;
+    padding-top:180px;
+    font-size:200%;
+}
+#contact h4{
+    color:rgb(230, 142, 186)
+}
+#contact div i{
+    font-size:42px;
+    margin:25px 10px 0;
+}
+#contact div i:hover{
+    color:rgb(62, 138, 209);
+    cursor: pointer;
+}
+#ask{
+    width:630px;
+    height:600px;
+    margin:0 0 100px 530px;
+    padding:40px 0 0 35px;
+    font-size:18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: solid lightgrey;
+    box-shadow:0 0 20px pink;
+}
+#ask div{
+    margin-bottom:16px;   
+}
+#ask div input, textarea{
+    margin-left:35px;
+}
+#ask .Email input{
+    width:250px;
+    height:35px;
+    padding-left:15px;
+    border: none;
+    border-bottom:2px solid rgb(204, 204, 218);
+}
+#ask .Choose input{
+    margin-top:12px;
+}
+#ask textarea{
+    width:500px;
+    height:200px;
+    padding:45px 30px 10px 30px;
+    margin-top:35px;
+}
+#ask .Box input{
+    width:45px;
+    height:30px;
+    font-size:18px;
+    border: none;
+    background-color: blue;
+    color:#fff;
+    margin:30px 0 0 450px;
+}
+#ask .Box input:active{
+    color:#000;
+    background-color: grey;
+}
+#foot{
+    height:26px;
+    background-color: rgb(235, 235, 235);
+    font-family: monospace;
+    padding:5px 0 0 10px;
+}
+
+
+
+
+
+
+
